@@ -1,0 +1,88 @@
+@import "../../global.scss";
+
+.about {
+    padding-left: 15%;
+    padding-top: 15%;
+    padding-right: 25%;
+}
+
+.title{
+    color: $white;
+}
+
+.description ul {
+    padding-top: 20px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 10px));
+}
+
+.description li {
+    position: relative;
+    padding-left: 20px;
+    font-size: 18px;
+    color: $darker-white;
+}
+
+.description li::before {
+    content: "▹    ";
+    color: $green;
+    position: absolute;
+    left: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.description {
+    color: $darker-white;
+    max-width: 700px;
+    font-size: 20px;
+    margin: 0;
+}
+
+.description a,
+.description b {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.image {
+    padding-left: 40px;
+}
+
+.image img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
+    border: 2px solid $green;
+}
+
+@media only screen and (max-width: 788px) {
+    .image img {
+        max-width: 200px;
+    }
+}
+
+.image:hover {
+    transform: translateY(-7px);
+}
+
+@media only screen and (max-width: 600px) {
+    #about {
+        height: unset;
+        padding-left: unset;
+        padding-right: unset;
+        padding-top: 30%;
+    }
+    .image img {
+        display: none;
+    }
+
+    .content {
+        display: unset;
+    }
+}

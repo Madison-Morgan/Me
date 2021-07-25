@@ -1,0 +1,103 @@
+@import "../../global.scss";
+
+.intro{
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15%;
+    padding-top: 10%;
+    min-height: 100vh;
+}
+
+.title{
+    font-size: 75px;
+}
+
+.name{
+    font-weight: bold;
+    color: $green;
+}
+
+
+.typing {
+    font-size: 50px;
+    margin-top: -10px;
+    font-weight: 300;
+
+    span {
+      font-size: inherit;
+      color: $green;
+    }
+
+    .ityped-cursor {
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+        50%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+}
+
+.description{
+    font-size: 18px;
+    max-width: 55%;
+    padding-bottom: 50px;
+    color: $darker-white;
+}
+
+.contact {
+    color: $green;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid $green;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.contact:hover {
+    border: 2px solid $darker-green;
+    font-weight: bold;
+    color: $darker-green;
+}
+
+@media only screen and (max-width: 600px) {
+    #intro {
+      min-height: unset;
+      padding-left: unset;
+      margin: 0;
+      align-items: center;
+    }
+  
+    .title {
+      font-size: 46px;
+    }
+    .name {
+      font-size: 46px;
+    }
+  
+    .typing {
+      font-size: 36px;
+    }
+  
+    .description {
+      font-size: 18px;
+      text-align: center;
+      max-width: unset;
+      padding-bottom: 40px;
+    }
+  
+    .contact {
+      font-size: 16px;
+      align-self: center;
+      margin-left: 30%;
+    }
+  }
+  

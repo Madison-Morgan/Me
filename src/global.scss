@@ -1,0 +1,18 @@
+$white: #DCDFE4;
+$darker-white: #a0a3a8;
+$green: #a9f573;
+$darker-green: #98C379;
+$black: #282C34;
+$width: 768px;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+*{
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: $black;
+}
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+}
