@@ -1,45 +1,48 @@
-import AnimateIn from "../Intro/AnimateIn";
 import "./About.scss";
+import Fade from "react-reveal/Fade";
+import Me from "../../files/better_me_mady.jpg"
 
 export default function About() {
 
-    const tech = ["Python", "C#/.NET", "Javacript", "SQL", "React.js"].map(stack => <li>{stack}</li>);
+    const tech = ["Python", "C#/.NET", "Javacript", "SQL", "React.js", "Go"].map(stack => <li>{stack}</li>);
 
     return (
         <div className="about" id="about">
-            <AnimateIn>
+            <Fade bottom>
                 <div className="header ">
-                    <span className="title">/ about me</span>
+                    <span className="title">/ About Me</span>
                 </div>
                 <div className="content">
                     <div className="description">
                         <p>
-                            I am a recent graduate from the University of Ottawa where I completed my
-                            BaSc. in Computer Engineering. With a little mix of hardware and software,
-                            I have developed my true passions in software development and coding.
-                            My interests lay in Data science, Machine Learning, and Full-Stack Development.
+                            I am a recent graduate from the <b>University of Ottawa</b> where I completed my
+                            <b>BaSc. in Computer Engineering</b>. My current interests are in <b>Data science</b>, 
+                            <b>Machine Learning</b>, and <b>Full-Stack Development</b>. Currently I work
+                            full-time at <a href="https://www.magnetforensics.com/">Magnet Forensics</a> as a
+                            <b>Software Developer</b>.
                         </p>
                         <p>
-                            Outside of work you can find me Smashing it up on my Nintendo switch, hanging out
-                            side doing some outdoor activity, or planning my next art project.
+                            Outside of work you can find me playing <b>video games</b>, hanging <b>outside</b> with <b>friends</b> playing 
+                             <b>volleyball</b>, hitting up some <b>beaches</b>, trying out the latest <b>restaurant</b> (current obsession - <b>Afghan food</b>)
+                            or planning my next <b>art</b> or <b>thrift</b> project.
                         </p>
                         {"Here are some technologies I have been working with:"}
                         <ul className="tech">
                             {tech.map(function (tech_item, i) {
                                 return (
-                                    <AnimateIn delay={`${i + 1}00ms`}>
-                                        <li>{tech_item}</li>
-                                    </AnimateIn>
+                                    <Fade bottom delay={(i+1)*100} key={i}>
+                                        {tech_item}
+                                    </Fade>
                                 );
                             })}
                         </ul>
                     </div>
                     <div className="image">
-                        <img src="../../files/me_mady.jpg" />
+                        <img src={Me} alt="me"/>
                     </div>
                 </div>
 
-            </AnimateIn>
+            </Fade>
         </div>
     )
 }
