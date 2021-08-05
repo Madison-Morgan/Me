@@ -29,11 +29,11 @@ class Navigation extends React.Component {
       <a href="/">/home</a>,
       <a href="#about">/about</a>,
       <a href="#experience">/experience</a>,
-      <a href="#projects">/creations</a>
+      <a href="#projects">/portfolio</a>
     ];
 
     return (
-      <div className="nav">
+      <div className="my-nav">
         {!isMobile && (
           <Sidenav
             expanded={expanded}

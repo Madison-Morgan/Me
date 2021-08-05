@@ -3,7 +3,7 @@ import './App.css';
 import Intro from './components/Intro/Intro';
 import About from './components/About/About';
 import Navigation from './components/Navigation/Navigation';
-import Employment from './components/Employment/Employment';
+import Portfolio from './components/Portfolio/Portfolio';
 
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <div className="sections">
        <Intro/>
        <About/>
-       <Employment />
+       <Portfolio />
      </div>
      <Navigation/>
     </div>
