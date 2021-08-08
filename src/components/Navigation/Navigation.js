@@ -1,71 +1,66 @@
 import "./Navigation.scss";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Fade from "react-reveal/Fade";
-import {Sidenav} from "rsuite";
+import {Navbar, Container, Nav} from "react-bootstrap";
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const isMobile = window.innerWidth < 600;
 
 class Navigation extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      expanded: true,
-      activeKey: "1"
-    };
-    this.handleSelect = this.handleSelect.bind(this);
-  }
-  handleSelect(eventKey) {
-    this.setState({
-      activeKey: eventKey
-    });
-  }
+
   render() {
-    const { expanded } = this.state;
 
     const links = [
-      <a href="/">/home</a>,
-      <a href="#about">/about</a>,
-      <a href="#experience">/experience</a>,
-      <a href="#projects">/portfolio</a>
+      <Nav.Link href="#intro">Home</Nav.Link>,
+      <Nav.Link href="#about">About</Nav.Link>,
+      <Nav.Link href="#projects">Portfolio</Nav.Link>,
+      <Nav.Link href="#contact">Contact</Nav.Link>
     ];
 
     return (
-      <div className="my-nav">
-        {!isMobile && (
-          <Sidenav
-            expanded={expanded}
-            defaultOpenKeys={["3", "4"]}
-            activeKey={this.state.activeKey}
-            onSelect={this.handleSelect}
-            appearance={"subtle"}
-          >
-            <Sidenav.Body>
-              <div className="links">
-                {links.map((link, i) => (
-                  <Fade bottom delay={(i + 1)*100} key={i}>
-                    <div key={i}>{link}</div>
-                  </Fade>
-                ))}
-              </div>
-            </Sidenav.Body>
-          </Sidenav>
-        )}
-        <div className="logos" href="/">
-          <a href="mailto:madison.morgan.eng@gmail.com">
-            <FontAwesomeIcon icon={faEnvelope} style={{ fontSize: 35 }} />
-          </a>
-          <a href="https://github.com/mmorg031">
-            <FontAwesomeIcon icon={faGithub} style={{ fontSize: 35 }} />
-          </a>
-          <a href="https://www.linkedin.com/in/madison-morgan-eng/">
-            <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: 35 }} />
-          </a>
-        </div>
-      </div>
+      <Navbar bg="light" expand="lg" sticky="top" className="navigation-nav">
+        <Container>
+          <Navbar.Brand>Madison Morgan</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+
+            {links.map((link, i) => (
+                  <Fade bottom delay={(i + 1) * 100} key={i}>
+                    {link}
+                  </Fade>))}
+              
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     );
+
+    // return (
+    //   <div className="navigation-nav">
+    //     {!isMobile && (
+    //       <Navbar appearance={"subtle"}>
+    //         <Navbar.Body>
+    //           <Nav>
+    //             {links.map((link, i) => (
+    //               <Fade bottom delay={(i + 1) * 100} key={i}>
+    //                 <Nav.Item id="" key={i} className="navigation-links">{link}</Nav.Item>
+    //               </Fade>
+    //             ))}
+    //             {/* <div className="links">
+    //               {links.map((link, i) => (
+    //                 <Fade bottom delay={(i + 1) * 100} key={i}>
+    //                   <div key={i}>{link}</div>
+    //                 </Fade>
+    //               ))}
+    //             </div> */}
+    //           </Nav>
+    //         </Navbar.Body>
+    //       </Navbar>
+    //     )}
+
+    //   </div>
+    // );
   }
 }
 

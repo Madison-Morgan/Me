@@ -1,104 +1,94 @@
 @import "../../global.scss";
 
-.intro{
-    color: $white;
-    background-color: $black;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 15%;
-    padding-top: 10%;
-    min-height: 100vh;
+.intro-intro {
+  color: $black;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+  min-height: 100vh;
 }
 
-.title{
-    font-size: 75px;
+.intro-title {
+  font-size: 75px;
 }
 
-.name{
-    font-weight: bold;
-    color: $green;
+.intro-name {
+  font-weight: bold;
+  color: $black;
 }
 
+.intro-typing {
+  font-size: 50px;
+  margin-top: -10px;
+  font-weight: 300;
 
-.typing {
-    font-size: 50px;
-    margin-top: -10px;
-    font-weight: 300;
+  span {
+    font-size: inherit;
+    color: $black;
+  }
 
-    span {
-      font-size: inherit;
-      color: $green;
+  .ityped-cursor {
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 1;
     }
-
-    .ityped-cursor {
-      animation: blink 1s infinite;
+    100% {
+      opacity: 0;
     }
-
-    @keyframes blink {
-        50%{
-            opacity: 1;
-        }
-        100%{
-            opacity: 0;
-        }
-    }
+  }
 }
 
-.description{
-    font-size: 18px;
-    max-width: 55%;
-    padding-bottom: 50px;
-    color: $secondary-color;
+.intro-description {
+  font-size: 18px;
+  max-width: 55%;
+  padding-bottom: 50px;
+  color: $black;
 }
 
-.contact {
-    color: $green;
-    font-size: 24px;
-    font-weight: bold;
-    padding: 10px 20px;
-    cursor: pointer;
-    border: 2px solid $green;
-    border-radius: 4px;
-    text-decoration: none;
-}
-
-.contact:hover {
-    border: 2px solid $darker-green;
-    font-weight: bold;
-    color: $darker-green;
+.intro-logos {
+  padding-top: 42px;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 8px;
 }
 
 @media only screen and (max-width: 600px) {
-    #intro {
-      min-height: unset;
-      padding-left: unset;
-      margin: 0;
-      align-items: center;
-    }
-  
-    .title {
-      font-size: 46px;
-    }
-    .name {
-      font-size: 46px;
-    }
-  
-    .typing {
-      font-size: 36px;
-    }
-  
-    .description {
-      font-size: 18px;
-      text-align: center;
-      max-width: unset;
-      padding-bottom: 40px;
-    }
-  
-    .contact {
-      font-size: 16px;
-      align-self: center;
-      margin-left: 30%;
-    }
+  #intro {
+    min-height: unset;
+    padding-left: unset;
+    margin: 0;
+    align-items: center;
   }
-  
+
+  .intro-title {
+    font-size: 46px;
+  }
+  .intro-name {
+    font-size: 46px;
+  }
+
+  .intro-typing {
+    font-size: 36px;
+  }
+
+  .intro-description {
+    font-size: 18px;
+    text-align: center;
+    max-width: unset;
+    padding-bottom: 40px;
+  }
+
+  .intro-logos {
+    width: 70px;
+    padding-left: unset;
+  }
+}

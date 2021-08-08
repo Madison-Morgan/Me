@@ -10,12 +10,12 @@ function App() {
   const [menu, setMenu] = useState(false)
   return (
     <div className="App">
+      <Navigation/>
       <div className="sections">
        <Intro/>
        <About/>
        <Portfolio />
      </div>
-     <Navigation/>
     </div>
   );
 }
