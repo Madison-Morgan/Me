@@ -2,73 +2,74 @@
 
 .about {
     padding-left: 15%;
-    padding-top: 15%;
-    padding-right: 25%;
-    background-color: $black;
+    padding-top: 10%;
+    padding-right: 15%;
+    background-color: $white;
 }
 
-.title{
+.about-title{
     color: $black;
+    font-size: 46px;
+    font-weight: 700;
 }
 
-.description ul {
+.about-description ul {
     padding-top: 20px;
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(2, minmax(150px, 10px));
 }
 
-.description li {
+.about-description li {
     position: relative;
     padding-left: 20px;
     font-size: 18px;
     color: $secondary-color;
 }
 
-.description li::before {
+.about-description li::before {
     content: "▹    ";
     color: $green;
     position: absolute;
     left: 0;
 }
 
-.content {
+.about-content {
     display: flex;
     flex-direction: row;
 }
 
-.description {
+.about-description {
     color: $secondary-color;
     max-width: 700px;
     font-size: 20px;
     margin: 0;
 }
 
-.description a,
-.description b {
+.about-description a,
+.about-description b {
     font-size: 19px;
     font-weight: bold;
 }
 
-.image {
+.about-image {
     padding-left: 40px;
 }
 
-.image img {
+.about-image img {
     max-width: 300px;
     height: auto;
     border-radius: 10px;
     box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
-    border: 2px solid $green;
 }
 
 @media only screen and (max-width: 788px) {
-    .image img {
+    .about-image img {
         max-width: 200px;
     }
 }
 
-.image:hover {
+.about-image:hover {
     transform: translateY(-7px);
 }
 
@@ -79,11 +80,11 @@
         padding-right: unset;
         padding-top: 30%;
     }
-    .image img {
+    .about-image img {
         display: none;
     }
 
-    .content {
+    .about-content {
         display: unset;
     }
 }
