@@ -1,0 +1,42 @@
+@import "../../global.scss";
+
+.contact {
+    padding-left: 15%;
+    padding-top: 10%;
+    padding-right: 15%;
+    background-color: $white;
+}
+
+.contact-title {
+    color: $black;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.contact-content {
+    display: block;
+    height: 600px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin-right: 5%;
+    width: 40%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    width: 55%;
+}

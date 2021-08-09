@@ -4,6 +4,7 @@ import Intro from './components/Intro/Intro';
 import About from './components/About/About';
 import Navigation from './components/Navigation/Navigation';
 import Portfolio from './components/Portfolio/Portfolio';
+import Contact from './components/Contact/Contact';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
        <Intro/>
        <About/>
        <Portfolio />
+       <Contact />
      </div>
     </div>
   );

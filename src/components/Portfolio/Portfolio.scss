@@ -1,0 +1,48 @@
+@import "../../global.scss";
+
+.portfolio {
+    padding-left: 15%;
+    padding-top: 10%;
+    padding-right: 15%;
+    background-color: $white;
+}
+
+.portfolio-title{
+    color: $black;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.portfolio-content p{
+    display: block;
+}
+
+.portfolio-row{
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    padding-bottom: 5%;
+}
+
+.portfolio-proj1{
+    display: flex;
+    border-radius: 10px;
+    font-size: 10px;
+    height: 100%;
+    width: 55%;
+    padding-right: 5%;
+    justify-content: flex-start;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.portfolio-proj2{
+    display: flex;
+    border-radius: 10px;
+    font-size: 10px;
+    height: 100%;
+    width: 40%;
+    justify-content: flex-start;
+    opacity: 1;
+    overflow: hidden;
+}
