@@ -54,4 +54,6 @@ export default function Contact() {
                     <footer><p>Developed and designed with 💖 Madison Morgan</p></footer>
                 </div>
             </Fade>
-        </div>)}
+        </div>
+        )
+    }
