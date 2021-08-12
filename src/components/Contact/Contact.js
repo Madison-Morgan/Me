@@ -15,7 +15,7 @@ export default function Contact() {
                     <div className="contact-wrapper">
 
                         <div className="contact-details">
-                            <h2>Let's Connect! 💌</h2>
+                            <h2>Let's Connect! 📧</h2>
                             <p>Im always down to grab some coffee or bubble tea!
                                 I would love to talk about future projects, possible
                                 oppurtunities, or that new Netflix show that blew your mind.
@@ -35,16 +35,16 @@ export default function Contact() {
                         </div>
 
                         <div className="contact-form">
-                            <form name="contact" method="POST" action="thankyou/thanks">
+                            <form name="form-contact" method="POST" action="thankyou/thanks">
                                 <input type="hidden" name="form-name" value="contact" />
-                                <label for="name" class="visuallyHidden">name</label>
-                                <input type="text" name="name" id="name" placeholder="name" autocomplete="off" required="" />
-                                <label class="visuallyHidden" for="email">email</label>
-                                <input type="email" name="email" id="email" placeholder="email" required="" />
-                                <label class="visuallyHidden" for="message" autocomplete="off">message</label>
-                                <textarea name="message" id="message" placeholder="message" required=""></textarea>
-                                <div class="submit-container">
-                                    <button class="send" type="submit">send message</button>
+                                <label htmlFor="name" className="visuallyHidden">name</label>
+                                <input type="text" name="name" id="name" placeholder="name" autoComplete="off" required="" />
+                                <label className="visuallyHidden" htmlFor="email">email</label>
+                                <input type="email" name="form-email" id="email" placeholder="email" required="" />
+                                <label className="visuallyHidden" htmlFor="message" autoComplete="off">message</label>
+                                <textarea name="form-message" id="message" placeholder="message" required=""></textarea>
+                                <div className="submit-container">
+                                    <button className="send" type="submit">send message</button>
                                 </div>
                             </form>
                         </div>

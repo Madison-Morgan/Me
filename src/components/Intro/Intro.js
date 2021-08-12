@@ -21,15 +21,14 @@ export default function Intro() {
     return (
         <div className="intro-intro" id="intro">
 
-            <div className="intro-title">Hello World &#128075;
-                <br />
-                <span className="intro-name">Madison</span> here.</div>
+            <div className="intro-title">Hello World
+                <span className="intro-name"> Madison</span> here! &#128075;</div>
             <div className="intro-typing"> Software <span ref={textRef}></span></div>
             <Fade bottom>
                 <div className="intro-description">
-                    I'm a <b>Computer Engineer</b> with a passion for <b>software</b>
-                    based in <b>Ottawa, Canada</b>. I have a great interest in machine learning,
-                    data, full-stack development, and everything in between.
+                    I'm a <b> Full-Stack Developer</b> 👩‍💻 with a passion for <b> data </b>
+                    based in <b> Ottawa, Canada</b>. I have a great interest in machine learning,
+                    data science, and everything in between. ✨
                 </div>
             </Fade>
 
