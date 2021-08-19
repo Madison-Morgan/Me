@@ -14,7 +14,8 @@ export default function Intro() {
             showCursor: true,
             backDelay: 1500,
             backSpeed: 60,
-            strings: ["Developer.", "Designer.", "Enthusiast."],
+            typeSpeed:  60,
+            strings: ["Software Developer.", "Film Critic.", "Cat Lady."],
         });
     }, []);
 
@@ -23,7 +24,7 @@ export default function Intro() {
 
             <div className="intro-title">Hello World
                 <span className="intro-name"> Madison</span> here! &#128075;</div>
-            <div className="intro-typing"> Software <span ref={textRef}></span></div>
+            <div className="intro-typing"><span ref={textRef}></span></div>
             <Fade bottom>
                 <div className="intro-description">
                     I'm a <b> Full-Stack Developer</b> 👩‍💻 with a passion for <b> data </b>
