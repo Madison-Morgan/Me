@@ -6,7 +6,7 @@ export default function Portfolio() {
         <div className="portfolio" id="portfolio">
             <Fade bottom>
                 <div className="portfolio-header">
-                    <span className="portfolio-title">/ Portfolio</span>
+                    <span className="portfolio-title">Portfolio</span>
                 </div>
                 <div className="portfolio-content">
                     <p>Click on a project to learn more!</p>

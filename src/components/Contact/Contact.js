@@ -9,13 +9,12 @@ export default function Contact() {
         <div className="contact" id="contact">
             <Fade bottom>
                 <div className="contact-header">
-                    <span className="contact-title">/ Contact</span>
+                    <span className="contact-title">Let's Connect! 📧</span>
                 </div>
                 <div className="contact-content">
                     <div className="contact-wrapper">
 
                         <div className="contact-details">
-                            <h2>Let's Connect! 📧</h2>
                             <p>Im always down to grab some coffee or bubble tea!
                                 I would love to talk about future projects, possible
                                 oppurtunities, or that new Netflix show that blew your mind.
@@ -35,7 +34,7 @@ export default function Contact() {
                         </div>
 
                         <div className="contact-form">
-                            <form name="form-contact" method="POST" action="thankyou/thanks">
+                            {/* <form name="form-contact" method="POST" action="thankyou/thanks">
                                 <input type="hidden" name="form-name" value="contact" />
                                 <label htmlFor="name" className="visuallyHidden">name</label>
                                 <input type="text" name="name" id="name" placeholder="name" autoComplete="off" required="" />
@@ -46,6 +45,12 @@ export default function Contact() {
                                 <div className="submit-container">
                                     <button className="send" type="submit">send message</button>
                                 </div>
+                            </form> */}
+                            <form class="form-contact" action="https://formspree.io/madison.morgan.eng@gmail.com" method="POST">
+                                <input type="text" name="name" placeholder="Name" />
+                                <input type="email" name="_replyto" placeholder="Email" />
+                                <textarea name="form-message" rows="8" placeholder="Say Something :)"></textarea>
+                                <button className="send" type="submit">SEND MESSAGE</button>
                             </form>
                         </div>
                     </div>
@@ -55,5 +60,5 @@ export default function Contact() {
                 </div>
             </Fade>
         </div>
-        )
-    }
+    )
+}

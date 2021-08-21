@@ -20,7 +20,7 @@ export default function About() {
         <div className="about" id="about">
             <Fade bottom>
                 <div className="about-header ">
-                    <span className="about-title">/ About Me</span>
+                    <span className="about-title">About Me 📙</span>
                 </div>
                 <div className="about-content">
                     <div className="about-description">
