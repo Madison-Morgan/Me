@@ -23,7 +23,7 @@ export default function Intro() {
         <div className="intro-intro" id="intro">
 
             <div className="intro-title">Hello World
-                <span className="intro-name"> Madison</span> here! &#128075;</div>
+                <span className="intro-name"> Madison</span> here! <span className="intro-wave">👋</span></div>
             <div className="intro-typing"><span ref={textRef}></span></div>
             <Fade bottom>
                 <div className="intro-description">
