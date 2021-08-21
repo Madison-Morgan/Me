@@ -4,26 +4,24 @@ import Fade from "react-reveal/Fade";
 import {Navbar, Container, Nav} from "react-bootstrap";
 import React from "react";
 
-const isMobile = window.innerWidth < 600;
-
 class Navigation extends React.Component {
 
   render() {
 
     const links = [
-      <Nav.Link href="#intro">Home</Nav.Link>,
-      <Nav.Link href="#about">About</Nav.Link>,
-      <Nav.Link href="#portfolio">Portfolio</Nav.Link>,
-      <Nav.Link href="#contact">Contact</Nav.Link>
+      // <Nav.Link className="navigation-link hover-underline-animation" href="#intro">Home</Nav.Link>,
+      <Nav.Link className="navigation-link hover-underline-animation" href="#about">About</Nav.Link>,
+      <Nav.Link className="navigation-link hover-underline-animation" href="#portfolio">Portfolio</Nav.Link>,
+      <Nav.Link className="navigation-link hover-underline-animation" href="#contact">Contact</Nav.Link>
     ];
 
     return (
-      <Navbar bg="light" expand="lg" sticky="top" className="navigation-nav">
+      <Navbar expand="lg" position="top" className="navigation-nav">
         <Container>
-          <Navbar.Brand>Madison Morgan</Navbar.Brand>
+          <Navbar.Brand className="navigation-brand" href="#intro">Madison Morgan.</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="justify-content-end" style={{ width: "100%" }}>
 
             {links.map((link, i) => (
                   <Fade bottom delay={(i + 1) * 100} key={i}>
