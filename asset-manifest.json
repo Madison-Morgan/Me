@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/mmorg031-website/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/mmorg031-website/static/js/main.a621ea79.chunk.js",
-    "main.js.map": "/mmorg031-website/static/js/main.a621ea79.chunk.js.map",
-    "runtime-main.js": "/mmorg031-website/static/js/runtime-main.be43aa96.js",
-    "runtime-main.js.map": "/mmorg031-website/static/js/runtime-main.be43aa96.js.map",
-    "static/js/2.996b1866.chunk.js": "/mmorg031-website/static/js/2.996b1866.chunk.js",
-    "static/js/2.996b1866.chunk.js.map": "/mmorg031-website/static/js/2.996b1866.chunk.js.map",
-    "static/js/3.f70dbaf6.chunk.js": "/mmorg031-website/static/js/3.f70dbaf6.chunk.js",
-    "static/js/3.f70dbaf6.chunk.js.map": "/mmorg031-website/static/js/3.f70dbaf6.chunk.js.map",
-    "index.html": "/mmorg031-website/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/mmorg031-website/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.996b1866.chunk.js.LICENSE.txt": "/mmorg031-website/static/js/2.996b1866.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/mmorg031-website/static/media/logo.6ce24c58.svg"
+    "main.css": "/Me/static/css/main.74cdc05e.chunk.css",
+    "main.js": "/Me/static/js/main.5528ed46.chunk.js",
+    "main.js.map": "/Me/static/js/main.5528ed46.chunk.js.map",
+    "runtime-main.js": "/Me/static/js/runtime-main.bc4061fb.js",
+    "runtime-main.js.map": "/Me/static/js/runtime-main.bc4061fb.js.map",
+    "static/css/2.d45d6843.chunk.css": "/Me/static/css/2.d45d6843.chunk.css",
+    "static/js/2.26001841.chunk.js": "/Me/static/js/2.26001841.chunk.js",
+    "static/js/2.26001841.chunk.js.map": "/Me/static/js/2.26001841.chunk.js.map",
+    "index.html": "/Me/index.html",
+    "static/css/2.d45d6843.chunk.css.map": "/Me/static/css/2.d45d6843.chunk.css.map",
+    "static/css/main.74cdc05e.chunk.css.map": "/Me/static/css/main.74cdc05e.chunk.css.map",
+    "static/js/2.26001841.chunk.js.LICENSE.txt": "/Me/static/js/2.26001841.chunk.js.LICENSE.txt",
+    "static/media/better_me_mady.88dac4c6.jpg": "/Me/static/media/better_me_mady.88dac4c6.jpg",
+    "static/media/go-logo-blue.f25237d8.svg": "/Me/static/media/go-logo-blue.f25237d8.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.be43aa96.js",
-    "static/js/2.996b1866.chunk.js",
-    "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.a621ea79.chunk.js"
+    "static/js/runtime-main.bc4061fb.js",
+    "static/css/2.d45d6843.chunk.css",
+    "static/js/2.26001841.chunk.js",
+    "static/css/main.74cdc05e.chunk.css",
+    "static/js/main.5528ed46.chunk.js"
   ]
 }
