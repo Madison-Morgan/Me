@@ -2,7 +2,7 @@ import "./About.scss";
 import Fade from "react-reveal/Fade";
 import Me from "../../files/better_me_mady.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPython, faReact, faWindows, faJs, fagoph } from "@fortawesome/free-brands-svg-icons";
+import { faPython, faReact, faWindows, faJs } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 import GoLogo from "../../files/go-logo-blue.svg"
 

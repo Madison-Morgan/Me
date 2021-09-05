@@ -1,4 +1,5 @@
 import "./Intro.scss";
+import Navigation from "../Navigation/Navigation";
 import Fade from "react-reveal/Fade";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
@@ -21,7 +22,7 @@ export default function Intro() {
 
     return (
         <div className="intro-intro" id="intro">
-
+            <Navigation className="intro-navigation" />
             <div className="intro-title">Hello World
                 <span className="intro-name"> Madison</span> here! <span className="intro-wave">👋</span></div>
             <div className="intro-typing"><span ref={textRef}></span></div>
@@ -36,13 +37,13 @@ export default function Intro() {
             <Fade bottom>
                 <div className="intro-logos" href="/">
                     <a href="mailto:madison.morgan.eng@gmail.com">
-                        <FontAwesomeIcon icon={faEnvelope} style={{ fontSize: 35 }} />
+                        <FontAwesomeIcon icon={faEnvelope} style={{ fontSize: 45 }} />
                     </a>
-                    <a href="https://github.com/mmorg031">
-                        <FontAwesomeIcon icon={faGithub} style={{ fontSize: 35 }} />
+                    <a href="https://github.com/Madison-Morgan">
+                        <FontAwesomeIcon icon={faGithub} style={{ fontSize: 45 }} />
                     </a>
                     <a href="https://www.linkedin.com/in/madison-morgan-eng/">
-                        <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: 35 }} />
+                        <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: 45 }} />
                     </a>
                 </div>
             </Fade>
