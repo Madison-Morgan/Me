@@ -17,7 +17,6 @@
     display: block;
     height: 600px;
     background-color: $section-background;
-    
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -30,47 +29,76 @@
 .contact-details {
     display: flex;
     flex-direction: column;
-    font-size: 16px;
+    font-size: 20px;
     margin-right: 2.5%;
     width: 45%;
 }
 
 .contact-details p {
     display: block;
-    font-size: 16px;
-    line-height: 25.6px;
+    font-size: 20px;
     padding-top: 20px;
+    color: $alternative-font;
 }
+
+.contact-logos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+  }
+  
+  .contact-logos a {
+    color: $primary-color;
+    padding: 0 7px;
+  }
+  
+  .contact-logos a:hover {
+    color: $primary-color-alternate;
+  }
 
 .contact-form {
     display: block;
     flex-direction: column;
-    font-size: 16px;
+    font-size: 20px;
     width: 57.5%;
 }
 
 .contact-form form {
     display: flex;
     flex-direction: column;
-    font-size: 16px;
-
+    font-size: 20px;
 }
 
 .contact .contact-wrapper .contact-form input, 
 .contact .contact-wrapper .contact-form textarea {
     padding: 10px;
     margin: 10px 0;
-    border: 2px solid fuchsia;
+    border: 2px solid $primary-color;
     border-radius: 5px;
     font-size: 16px;
     font-weight: 400;
 }
 
+.form-contact:focus {
+    border: 2px solid $primary-color-alternate;
+}
+
 .contact-form button{
     width: 25%;
-    border-radius: 5px;
     padding: 8px 0px;
     margin-top: 10px;
+    font-weight: bold;
+    border: 3px solid $primary-color;
+    background: $primary-font;
+    color: $primary-color;
+    border-radius: 40px;
+    transition: all .35s;
+}
+
+.contact-form button:hover {
+    color: $primary-font;
+    background: linear-gradient(90deg, $primary-color, $primary-color-alternate);
 }
 
 .contact-footer {

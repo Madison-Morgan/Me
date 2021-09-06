@@ -18,7 +18,7 @@ class Navigation extends React.Component {
     return (
       <Navbar expand="lg" position="top" className="navigation-nav">
         <Container>
-          <Navbar.Brand className="navigation-brand" href="#intro">Madison Morgan.</Navbar.Brand>
+          <Navbar.Brand className="navigation-brand hover-underline-animation" href="#intro">Madison Morgan.</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="justify-content-end" style={{ width: "100%" }}>

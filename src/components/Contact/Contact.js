@@ -20,7 +20,7 @@ export default function Contact() {
                                 oppurtunities, or that new Netflix show that blew your mind.
                                 Shoot me a message here or on my socials &#128522;.
                             </p>
-                            <div className="intro-logos" href="/">
+                            <div className="contact-logos" href="/">
                                 <a href="mailto:madison.morgan.eng@gmail.com">
                                     <FontAwesomeIcon icon={faEnvelope} style={{ fontSize: 35 }} />
                                 </a>
@@ -50,7 +50,7 @@ export default function Contact() {
                                 <input type="text" name="name" placeholder="Name" />
                                 <input type="email" name="_replyto" placeholder="Email" />
                                 <textarea name="form-message" rows="8" placeholder="Say Something :)"></textarea>
-                                <button className="send" type="submit">SEND MESSAGE</button>
+                                <button className="send" type="submit">Send Message</button>
                             </form>
                         </div>
                     </div>

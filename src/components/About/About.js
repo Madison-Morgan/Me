@@ -25,14 +25,14 @@ export default function About() {
                 <div className="about-content">
                     <div className="about-description">
                         <p>
-                            Hello again! Glad your still scrolling &#128522; ! I recently graduated from the <b>University of Ottawa</b> 
-                            with a bachelor of <b>Computer Engineering</b>. Currently I work
+                            Hello again! Glad your still scrolling &#128522; ! I recently graduated from the <b>University of Ottawa </b> 
+                              with a bachelor of <b>Computer Engineering</b>. Currently I work
                             full-time at <a href="https://www.magnetforensics.com/">Magnet Forensics</a> as a
-                            <b>Software Developer</b>.
+                            <b> Software Developer</b>.
                         </p>
                         <p>
-                            Outside of work you can find me playing <b>video games</b>, trying out the latest <b>restaurant</b> 
-                            (current obsession - <b>Afghan food</b>) or planning my next <b>art</b> project.
+                            Outside of work you can find me playing <b>video games</b>, trying out the latest <b>restaurant </b> 
+                             (current obsession - <b>Afghan food</b>) or planning my next <b>art</b> project.
                         </p>
                         {"Here are some technologies I have been working with:"}
                         <ul className="about-tech">

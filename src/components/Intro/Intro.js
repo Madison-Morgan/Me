@@ -1,10 +1,11 @@
 import "./Intro.scss";
 import Navigation from "../Navigation/Navigation";
 import Fade from "react-reveal/Fade";
+import Pulse from "react-reveal/Pulse";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export default function Intro() {
@@ -15,7 +16,7 @@ export default function Intro() {
             showCursor: true,
             backDelay: 1500,
             backSpeed: 60,
-            typeSpeed:  60,
+            typeSpeed: 60,
             strings: ["Software Developer.", "Film Critic.", "Cat Lady."],
         });
     }, []);
@@ -48,6 +49,13 @@ export default function Intro() {
                 </div>
             </Fade>
 
+            <p className="intro-seemore">
+                <Pulse forever duration={2000}>
+                    <a href="#about">
+                        <FontAwesomeIcon icon={faAngleDown} style={{ fontSize: 25 }} />
+                    </a>
+                </Pulse>
+            </p>
         </div>
     );
 }
