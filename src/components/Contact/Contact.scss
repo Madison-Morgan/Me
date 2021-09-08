@@ -112,9 +112,17 @@
     font-size: 18px;
 }
 
-@media (min-width: 780px) {
-    .contact .contact-wrapper .contact-details {
-        width: 30%;
-        margin-right: 10%;
+@media only screen and (max-width: 600px) {
+    #contact {
+        padding-top: 20%;
+    }
+    
+    // .contact .contact-wrapper .contact-details {
+    //     width: 30%;
+    //     margin-right: 10%;
+    // }
+
+    .contact-title {
+        font-size: 38px;
     }
 }

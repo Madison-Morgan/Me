@@ -48,3 +48,41 @@
     opacity: 1;
     overflow: hidden;
 }
+
+@media only screen and (max-width: 600px) {
+    #portfolio {
+        padding-top: 20%;
+    }
+
+    .portfolio-title {
+        font-size: 38px;
+    }
+
+    .portfolio-row{
+        display: flex;
+        justify-content: space-around;
+        height: 400px;
+        padding-bottom: 5%;
+        flex-direction: column;
+    }
+
+    .portfolio-proj1{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: flex-start;
+        opacity: 1;
+        overflow: hidden;
+        padding-bottom: 5%;
+    }
+
+    .portfolio-proj2{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: flex-start;
+        opacity: 1;
+        overflow: hidden;
+        padding-bottom: 5%;
+    }
+}

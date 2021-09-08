@@ -9,14 +9,13 @@
   background-color: transparent !important;
 }
 
-
-.navigation-brand{
+.navigation-brand {
   font-size: 38px !important;
   font-weight: bold;
   padding-top: 10px !important;
 }
 
-.nav-link{
+.nav-link {
   margin-right: 50px !important;
 }
 
@@ -34,7 +33,7 @@
 }
 
 .hover-underline-animation:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -51,4 +50,10 @@
 .hover-underline-animation:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation-brand {
+    font-size: 28px !important;
+  }
 }

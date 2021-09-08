@@ -56,7 +56,7 @@ export default function Contact() {
                     </div>
                 </div>
                 <div className="contact-footer">
-                    <footer><p>Developed and designed with 💖 Madison Morgan</p></footer>
+                    <footer><p>Developed and designed with 💕 Madison Morgan</p></footer>
                 </div>
             </Fade>
         </div>

@@ -7,7 +7,7 @@
     background-color: $section-background;
 }
 
-.about-title{
+.about-title {
     color: $secondary-font;
     font-size: 46px;
     font-weight: 700;
@@ -83,16 +83,30 @@
 
 @media only screen and (max-width: 600px) {
     #about {
-        height: unset;
-        padding-left: unset;
-        padding-right: unset;
-        padding-top: 30%;
+        // height: unset;
+        // padding-left: unset;
+        // padding-right: unset;
+        padding-top: 20%;
     }
-    .about-image img {
-        display: none;
+
+    .about-title {
+        font-size: 38px;
     }
 
     .about-content {
         display: unset;
+    }
+
+    .about-image {
+        padding-left: unset;
+    }
+
+    .about-image img {
+        max-width: 200px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
     }
 }
