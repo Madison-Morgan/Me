@@ -15,7 +15,7 @@
 
 .contact-content {
     display: block;
-    height: 600px;
+    // height: 600px;
     background-color: $section-background;
     padding-left: 10%;
     padding-right: 10%;
@@ -85,7 +85,7 @@
 }
 
 .contact-form button{
-    width: 25%;
+    width: 100%;
     padding: 8px 0px;
     margin-top: 10px;
     font-weight: bold;
@@ -103,26 +103,43 @@
 
 .contact-footer {
     width: 100%;
-    position: relative;
     background: linear-gradient(90deg, $primary-color, $primary-color-alternate);
     text-align: center;
     color: $secondary-font;
-    padding: 0.5%;
-    padding-top: 1%;
+    padding: 1%;
+    margin-top: 5%;
     font-size: 18px;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 600px) {
     #contact {
         padding-top: 20%;
     }
-    
-    // .contact .contact-wrapper .contact-details {
-    //     width: 30%;
-    //     margin-right: 10%;
-    // }
+
+    .contact-wrapper {
+        flex-direction: column;
+    }
 
     .contact-title {
         font-size: 38px;
+    }
+
+    .contact-details {
+        width: 100%;
+    }
+
+    .contact-form {
+        padding-top: 5%;
+        width: 100%;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+
+    .contact-footer {
+        margin-top: 10%;
+        padding-top: 3%;
     }
 }

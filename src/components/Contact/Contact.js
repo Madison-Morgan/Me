@@ -18,7 +18,8 @@ export default function Contact() {
                             <p>Im always down to grab some coffee or bubble tea!
                                 I would love to talk about future projects, possible
                                 oppurtunities, or that new Netflix show that blew your mind.
-                                Shoot me a message here or on my socials &#128522;.
+                                Im currently on the hunt for an exciting and challenging new position too!
+                                Shoot me a message here or on my socials 😊.
                             </p>
                             <div className="contact-logos" href="/">
                                 <a href="mailto:madison.morgan.eng@gmail.com">
@@ -55,10 +56,10 @@ export default function Contact() {
                         </div>
                     </div>
                 </div>
-                <div className="contact-footer">
-                    <footer><p>Developed and designed with 💕 Madison Morgan</p></footer>
-                </div>
             </Fade>
+            <div className="contact-footer">
+                    <footer><p>Developed and designed with 💕 Madison Morgan</p></footer>
+            </div>
         </div>
     )
 }
