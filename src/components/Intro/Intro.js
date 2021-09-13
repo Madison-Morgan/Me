@@ -23,6 +23,7 @@ export default function Intro() {
 
     return (
         <div className="intro-intro" id="intro">
+            <div className="intro-content" />
             <Navigation className="intro-navigation" />
             <div className="intro-title">Hello World
                 <span className="intro-name"> Madison</span> here! <span className="intro-wave">👋</span></div>

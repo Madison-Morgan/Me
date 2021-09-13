@@ -8,28 +8,91 @@
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 10%;
-  background: linear-gradient(90deg, $primary-color, $primary-color-alternate);
-	// background-size: 400% 400%;
-	// animation: gradient 15s ease infinite;
+  background-color: $primary-font;
+  // background: linear-gradient(90deg, $primary-color, $primary-color-alternate);
+  // background-size: 400% 400%;
+  // animation: gradient 15s ease infinite;
   // height: 100vh;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 75% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+.intro-content {
+  background: linear-gradient(90deg, $primary-color, $primary-color-alternate);
+  border-radius: 30% 50% 20% 40%;
+  height: 80%;
+  width: 50%;
+  left: 5%;
+  top: 20%;
+  transform: rotate(-180deg);
+  opacity: 1;
+  position: absolute;
+  z-index: 0;
+  animation: transform 30s ease-in-out infinite both alternate, movement_two 60s ease-in-out infinite both;
 }
 
+@keyframes transform {
+  0%,
+  100% {
+    border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
+  }
+  20% {
+    border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%;
+  }
+  40% {
+    border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%;
+  }
+  60% {
+    border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%;
+  }
+  80% {
+    border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%;
+  }
+}
+
+@keyframes transform-mobile {
+  0%,
+  100% {
+    border-radius: 16% 33% 35% 15% / 15% 15% 35% 35%;
+  }
+  20% {
+    border-radius: 17% 31% 25% 24% / 18% 32% 17% 31%;
+  }
+  40% {
+    border-radius: 18% 32% 32% 18% / 32% 24% 26% 18%;
+  }
+  60% {
+    border-radius: 18% 31% 25% 24% / 15% 15% 35% 35%;
+  }
+  80% {
+    border-radius: 20% 30% 21% 29% / 20% 25% 24% 29%;
+  }
+}
+
+@keyframes movement_two {
+  0%,
+  500% {
+    transform: none;
+  }
+  50% {
+    transform: translate(10%, 5%) rotate(-200deg) scale(1.2);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 75% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 .intro-title {
   padding-top: 10%;
   font-size: 48px;
+  z-index: 1;
 }
 
 .intro-name {
@@ -42,6 +105,7 @@
   font-size: 50px;
   margin-top: -10px;
   font-weight: 300;
+  z-index: 1;
 
   span {
     font-size: inherit;
@@ -62,23 +126,39 @@
   }
 }
 
-.intro-wave{
-  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s;        /* Change to speed up or slow down */
-  animation-iteration-count: infinite;  /* Never stop waving :) */
-  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+.intro-wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
 }
 
 @keyframes wave-animation {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-  100% { transform: rotate( 0.0deg) }
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .intro-description {
@@ -104,7 +184,6 @@
   color: $primary-font;
 }
 
-
 .intro-seemore {
   display: block;
   text-align: center;
@@ -112,15 +191,13 @@
 
 .intro-seemore a {
   color: $secondary-font;
-  position:absolute;
+  position: absolute;
   height: 100%;
 }
 
 .intro-seemore a:hover {
   color: $primary-font;
 }
-
-
 
 @media only screen and (max-width: 600px) {
   #intro {
@@ -150,12 +227,24 @@
   }
 
   .intro-logos {
-    width:100%;
+    width: 100%;
     align-items: center;
     padding: 10% 0%;
   }
 
   .intro-seemore {
     padding-top: 12%;
+  }
+
+  .intro-content {
+    border-radius: 15% 25% 10% 20%;
+    height: 70%;
+    width: 80%;
+    left: 5%;
+    padding-right: 5%;
+    top: 10%;
+    transform: rotate(-180deg);
+    animation: transform 30s ease-in-out infinite both alternate, movement_two 60s ease-in-out infinite both;
+
   }
 }
