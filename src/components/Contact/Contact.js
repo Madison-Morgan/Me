@@ -47,7 +47,7 @@ export default function Contact() {
                                     <button className="send" type="submit">send message</button>
                                 </div>
                             </form> */}
-                            <form class="form-contact" action="https://formspree.io/madison.morgan.eng@gmail.com" method="POST">
+                            <form className="form-contact" action="https://formspree.io/madison.morgan.eng@gmail.com" method="POST">
                                 <input type="text" name="name" placeholder="Name" />
                                 <input type="email" name="_replyto" placeholder="Email" />
                                 <textarea name="form-message" rows="8" placeholder="Say Something :)"></textarea>

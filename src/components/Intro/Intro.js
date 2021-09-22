@@ -17,7 +17,7 @@ export default function Intro() {
             backDelay: 1500,
             backSpeed: 60,
             typeSpeed: 60,
-            strings: ["Software Developer.", "Film Critic.", "Cat Lady."],
+            strings: ["Software Developer.", "Film Critic.", "Cat Lady.", "Aspiring Astronaut."],
         });
     }, []);
 

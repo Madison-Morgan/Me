@@ -9,8 +9,22 @@
   background-color: transparent !important;
 }
 
+.navigation-nav-scroll {
+  font-size: 20px !important;
+  // padding-top: 3% !important;
+  // padding-right: 9%;
+  // padding-left: 9%;
+  background: white !important;
+}
+
 .navigation-brand {
   font-size: 38px !important;
+  font-weight: bold;
+  padding-top: 10px !important;
+}
+
+.navigation-brand-scroll {
+  font-size: 29px !important;
   font-weight: bold;
   padding-top: 10px !important;
 }
@@ -28,7 +42,7 @@
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: white;
+  color: $primary-color;
   border-radius: 3px;
 }
 
@@ -41,7 +55,7 @@
   bottom: 0;
   left: 0;
   font-weight: bold;
-  background-color: white;
+  background-color: $primary-color;
   border-radius: 4px;
   transform-origin: bottom left;
   transition: transform 0.25s ease-out;
