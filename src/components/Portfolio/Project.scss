@@ -6,6 +6,7 @@
 
 .portfolio-overlay {
     box-sizing: border-box;
+    position: absolute;
     padding: 20px;
     border-radius: 10px;
     align-items: center;
@@ -64,7 +65,7 @@
         border-radius: 5px;
         color: black;
         margin: 10px;
-        padding: 10px 15px;
+        padding: 5px 10px;
         text-align: center;
         width: auto;
         text-decoration: none;
