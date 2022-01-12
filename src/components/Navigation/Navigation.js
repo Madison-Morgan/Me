@@ -32,9 +32,9 @@ class Navigation extends React.Component {
     ];
 
     return (
-      <Navbar expand="lg" fixed={this.state.position} className={this.state.position == 'top' ? "navigation-nav-scroll" : "navigation-nav"} >
+      <Navbar expand="lg" fixed={this.state.position} className={this.state.position === 'top' ? "navigation-nav-scroll" : "navigation-nav"} >
         <Container>
-          <Navbar.Brand className={this.state.position == 'top' ? "navigation-brand-scroll hover-underline-animation" : 
+          <Navbar.Brand className={this.state.position === 'top' ? "navigation-brand-scroll hover-underline-animation" : 
           "navigation-brand hover-underline-animation"}
           href="#intro">Madison Morgan.</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -9,7 +9,7 @@ export default function Contact() {
         <div className="contact" id="contact">
             <Fade bottom>
                 <div className="contact-header">
-                    <span className="contact-title">Let's Connect! 📧</span>
+                    <span className="contact-title"><span className="emoji">📧</span> Let's Connect!</span>
                 </div>
                 <div className="contact-content">
                     <div className="contact-wrapper">
@@ -47,7 +47,7 @@ export default function Contact() {
                                     <button className="send" type="submit">send message</button>
                                 </div>
                             </form> */}
-                            <form className="form-contact" action="https://formspree.io/madison.morgan.eng@gmail.com" method="POST">
+                            <form className="form-contact" action="https://formspree.io/f/mgedowdq" method="POST">
                                 <input type="text" name="name" placeholder="Name" />
                                 <input type="email" name="_replyto" placeholder="Email" />
                                 <textarea name="form-message" rows="8" placeholder="Say Something :)"></textarea>
@@ -58,7 +58,7 @@ export default function Contact() {
                 </div>
             </Fade>
             <div className="contact-footer">
-                    <footer><p>Developed and designed with 💕 Madison Morgan</p></footer>
+                    <footer><p>Developed and designed with <span className="emoji">💕</span> Madison Morgan</p></footer>
             </div>
         </div>
     )

@@ -23,40 +23,14 @@
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    // align-items: stretch;
     height: 400px;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
 }
 
 .active-project {
     visibility: hidden;
-}
-
-.portfolio-proj1{
-    display: flex;
-    box-sizing: border-box;
-    position: relative;
-    border-radius: 10px;
-    font-size: 10px;
-    height: 100%;
-    width: 55%;
-    padding-right: 5%;
-    justify-content: flex-start;
-    opacity: 1;
-    overflow: hidden;
-    background: linear-gradient(45deg, $primary-color, $primary-color-alternate);
-}
-
-.portfolio-proj2{
-    display: flex;
-    box-sizing: border-box;
-    border-radius: 10px;
-    font-size: 10px;
-    height: 100%;
-    width: 40%;
-    justify-content: flex-start;
-    opacity: 1;
-    overflow: hidden;
-    background: linear-gradient(45deg, $primary-color, $primary-color-alternate);
 }
 
 @media only screen and (max-width: 600px) {
@@ -74,24 +48,5 @@
         height: 600px;
         padding-bottom: 5%;
         flex-direction: column;
-    }
-
-    .portfolio-proj1{
-        display: flex;
-        height: 45%;
-        width: 100%;
-        justify-content: flex-start;
-        opacity: 1;
-        overflow: hidden;
-        padding-bottom: 10%;
-    }
-
-    .portfolio-proj2{
-        display: flex;
-        height: 45%;
-        width: 100%;
-        justify-content: flex-start;
-        opacity: 1;
-        overflow: hidden;
     }
 }

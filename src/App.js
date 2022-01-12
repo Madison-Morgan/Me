@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './App.css';
 import Intro from './components/Intro/Intro';
 import About from './components/About/About';

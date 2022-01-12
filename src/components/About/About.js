@@ -20,12 +20,12 @@ export default function About() {
         <div className="about" id="about">
             <Fade bottom>
                 <div className="about-header ">
-                    <span className="about-title">About Me 🌸</span>
+                    <span className="about-title"><span className="emoji">🌸</span> About Me</span>
                 </div>
                 <div className="about-content">
                     <div className="about-description">
                         <p>
-                            Hello again! Glad your still scrolling &#128522; ! I recently graduated from the <b>University of Ottawa </b> 
+                            Hello again! Glad you're still scrolling &#128522; ! I recently graduated from the <b>University of Ottawa </b> 
                               with a bachelor of <b>Computer Engineering</b>. Currently I work
                             full-time at <a href="https://www.magnetforensics.com/">Magnet Forensics</a> as a
                             <b> Software Developer</b>.
@@ -46,7 +46,7 @@ export default function About() {
                         </ul>
                     </div>
                     <div className="about-image">
-                        <img src={Me} alt="me"/>
+                        <img src={Me} alt=""/>
                     </div>
                 </div>
 

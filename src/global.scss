@@ -8,6 +8,11 @@ $alternative-font: #696969;
 $width: 768px;
 @import url('https://fonts.googleapis.com/css2?family=NTR&display=swap');
 
+// mitigate chrome bug
+.emoji {
+    font-weight: initial !important;
+}
+
 *{
     font-family: "NTR",sans-serif;
 }
